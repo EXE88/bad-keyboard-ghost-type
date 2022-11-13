@@ -1,13 +1,17 @@
 
 from keyboard import press_and_release , write
 from time import sleep
+import sys
 
-command = "pip list"
-
-press_and_release("left windows + R") # Press And Release WINDOWS + R -> OPEN Run
+press_and_release("left windows + R")
 sleep(0.5)
-write("cmd") # Write cmd on RUN
-press_and_release("enter") # Press Enter For Open Cmd
+write("notepad")
 sleep(0.5)
-write(command) # write command in cmd
-press_and_release("enter") # Run Command in cmd
+press_and_release("enter")
+sleep(0.5)
+list1 = ['g','h','o','s','t',' ','t','y','p','e','',':)']
+for i in list1:
+    write(i)
+    sleep(0.7)
+else:
+    sys.exit()
